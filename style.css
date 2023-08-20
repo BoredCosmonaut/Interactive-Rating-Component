@@ -1,0 +1,293 @@
+/* This bit is for css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Below is where the style begins */
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: hsl(216, 12%, 8%);
+}
+
+#card {
+    display: block;
+    position: relative;
+    margin: 2% auto;
+    width: 200px;
+    height: 220px;
+    background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 17%, 11%));
+    text-align: left;
+    border-radius: 20px;
+}
+
+#top-star {
+    display: inline-flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 20px 10px;
+    background-color: hsl(214, 26%, 24%);
+}
+
+#star-image {
+    padding-top: 2px;
+    width: 15px;
+    height: 15px;
+}
+
+#question {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: calc(20px + 0.390625vw);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    width: 80%;
+}
+
+#let-know {
+    width: 80%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: calc(7px + 0.390625vw);
+    color: hsl(216, 12%, 54%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+
+#rating {
+    display:flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.score {
+    text-align: center;
+    margin-left: 15px;
+    background-color: hsl(214, 26%, 24%);
+    border-radius: 50%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: calc(10px + 0.390625vw);
+    color: hsl(216, 12%, 54%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+
+.score:hover {
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+#submit {
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 5px 70px;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 20px;
+    font-size: calc(10px + 0.390625vw);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+}
+
+#submit:hover {
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+    background-color: white;
+}
+
+#thank-card {
+    display: none;
+    position: relative;
+    margin: 2% auto;
+    width: 250px;
+    height: 220px;
+    background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 17%, 11%));
+    text-align: left;
+    border-radius: 20px;
+}
+
+#phone-container {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 20px 0;
+}
+
+#phone-image {
+    margin-top: 10px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#star-score {
+    width: 70%;
+    height: 10px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: calc(10px + 0.390625vw);
+    color: hsl(25, 97%, 53%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    background-color: hsl(214, 26%, 24%);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+#thank-you {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: calc(18px + 0.390625vw);
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+#thank-text {
+    width: auto;
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: calc(7px + 0.390625vw);
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    color:hsl(216, 12%, 54%);;
+}
+
+@media(min-width: 370px) {
+    #card {
+        width: 500px;
+        height: 400px;
+        background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 17%, 11%));
+    }
+
+    #top-star {
+        margin-top: 30px;
+        margin-left: 30px;
+        width: 40px;
+        height: 40px;
+    }
+
+    #star-image {
+        margin-top: 2px;
+        width: 30px;
+        height: 30px;
+    }
+
+    #question {
+        font-size: calc(25px + 0.390625vw);
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+
+    #let-know {
+        margin-left: 30px;
+        font-size: calc(10px + 0.390625vw);
+    }
+
+    #rating {
+        margin-left: 5px;
+        margin-top: 25px;
+    }
+
+    .score {
+        margin-left: 30px;
+        padding-bottom: 15px;
+        padding-top: 20px;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    #submit {
+        margin-top: 40px;
+        margin-left: 35px;
+        padding: 10px 170px;
+    }
+
+    #thank-card {
+        width: 450px;
+        height: 370px;
+        background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 17%, 11%));
+    }
+
+    #phone-container {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: auto;
+    }
+
+    #phone-image {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        max-width: 350px;
+        max-height: 350px;
+    }
+
+    #star-score {
+        width: 200px;
+        font-size: calc(10px + 0.390625vw);
+        padding: 10px 0 15px 0;
+    }
+
+    #thank-you {
+        font-size: calc(25px + 0.390625vw);
+    }
+
+    #thank-text {
+        font-size: calc(10px + 0.390625vw);
+    }
+}
