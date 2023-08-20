@@ -18,8 +18,16 @@ ratingScores.forEach(scoreElement => {
 
     //Button function
     document.getElementById("submit").addEventListener("click", (e) => {
-        e.preventDefault();
 
+        //Supposed to select the whited out score
+        const selectedScore = document.getElementsByClassName('score');
+
+        //Suppose to check if a score is checked but it doesn't work fully
+        if (!selectedScore) {
+            alert('Please select a score before submitting.');
+        }
+        
+        e.preventDefault();
         //Makes the first card disappear
         document.getElementById("card").style.display = "none"
 
@@ -32,4 +40,3 @@ ratingScores.forEach(scoreElement => {
 
     });
 });
-
