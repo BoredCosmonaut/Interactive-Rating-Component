@@ -20,7 +20,7 @@ ratingScores.forEach(scoreElement => {
     document.getElementById("submit").addEventListener("click", (e) => {
 
         //Supposed to select the whited out score
-        const selectedScore = document.getElementsByClassName('score');
+       const selectedScore = document.querySelector('.score[style="background-color: white;"]');
 
         //Suppose to check if a score is checked but it doesn't work fully
         if (!selectedScore) {
