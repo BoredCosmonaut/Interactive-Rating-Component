@@ -24,6 +24,7 @@ ratingScores.forEach(scoreElement => {
 
         //Suppose to check if a score is checked but it doesn't work fully
         if (!selectedScore) {
+            e.preventDefault();
             alert('Please select a score before submitting.');
         }
         
